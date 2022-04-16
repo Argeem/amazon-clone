@@ -8,8 +8,7 @@ function Header() {
     <div className='header'>
         <img className='header-logo'
             src='https://pngimg.com/uploads/amazon/amazon_PNG11.png'
-            alt='amazon-logo'
-        />
+            alt='amazon-logo'/>
 
         <div className='header-search'>
             <input className='header-input'
