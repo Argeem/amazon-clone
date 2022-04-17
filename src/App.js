@@ -17,12 +17,6 @@ function App() {
       </div>
     </Router>
   );
-  // return(
-  //   <div className="App">
-  //     <Header/>
-  //     <Home/>
-  //   </div>
-  // );
 }
 
 export default App;
