@@ -9,7 +9,7 @@ function Home() {
       {
         id : uuidv4(),
         title : 'Acer Predator Helios 300 PH315-54-760S Gaming Laptop',
-        price : 19.26,
+        price : 1129.99,
         image : 'https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/February/Dashboard/computer120x._SY85_CB468850970_.jpg',
         rating :5
       },

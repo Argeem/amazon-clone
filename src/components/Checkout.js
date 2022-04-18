@@ -1,8 +1,13 @@
+import { ListItem } from '@mui/material'
 import React from 'react'
+import { useStateValue } from '../data/StateProvider'
 import './Checkout.css'
+import CheckoutProduct from './CheckoutProduct'
 import Subtotal from './Subtotal'
 
 function Checkout() {
+  const [{basket},_] = useStateValue()
+
   return (
     <div className='checkout'>
         <div className='checkout-left'>
@@ -12,10 +17,14 @@ function Checkout() {
 
           <div>
             <h2 className='checkout-title'>Shopping Basket</h2>
-            {/* Basket Item */}
-            {/* Basket Item */}
-            {/* Basket Item */}
-            {/* Basket Item */}
+            {basket.map((component)=>(
+              <CheckoutProduct
+                id = {component.id}
+                title = {component.title}
+                image = {component.image}
+                price = {component.price}
+                rating = {component.rating}/>
+            ))}
           </div>          
         </div>
 
