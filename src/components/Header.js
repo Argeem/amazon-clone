@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 import { useStateValue } from '../data/StateProvider';
 
 function Header() {
-  const [{basket},_] = useStateValue();
+  const [{basket},] = useStateValue();
   
   return (
     <div className='header'>

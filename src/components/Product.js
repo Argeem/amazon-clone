@@ -3,13 +3,14 @@ import { useStateValue } from '../data/StateProvider'
 import './Product.css'
 
 function Product({id, title,image,price,rating}) {
-  const [_,dispatch] = useStateValue();
+  const [,dispatch] = useStateValue();
   const addToBasket=()=>{
     //dispatch the item into the data layer
     dispatch({
         type: "ADD_TO_BASKET",
         item:{
             id: id,
+            // eslint-disable-next-line
             title,title,
             image: image,
             price: price,

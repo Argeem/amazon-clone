@@ -1,4 +1,3 @@
-import { ListItem } from '@mui/material'
 import React from 'react'
 import { useStateValue } from '../data/StateProvider'
 import './Checkout.css'
@@ -6,7 +5,7 @@ import CheckoutProduct from './CheckoutProduct'
 import Subtotal from './Subtotal'
 
 function Checkout() {
-  const [{basket},_] = useStateValue()
+  const {basket} = useStateValue()
 
   return (
     <div className='checkout'>
