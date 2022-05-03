@@ -3,6 +3,7 @@ import { useStateValue } from '../data/StateProvider'
 import './Checkout.css'
 import CheckoutProduct from './CheckoutProduct'
 import Subtotal from './Subtotal'
+import { v4 as uuidv4 } from 'uuid';
 
 function Checkout() {
   const [{basket},] = useStateValue()
@@ -22,7 +23,8 @@ function Checkout() {
                 title = {component.title}
                 image = {component.image}
                 price = {component.price}
-                rating = {component.rating}/>
+                rating = {component.rating}
+                key={uuidv4()}/>
             ))}
           </div>          
         </div>

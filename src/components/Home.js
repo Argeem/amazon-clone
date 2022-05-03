@@ -65,19 +65,19 @@ function Home() {
 
       <div className='home-row'>
         {productLs[0].map((element)=>{
-          return <Product {...element}/>
+          return <Product {...element} key={element.id}/>
         })}
       </div>
 
       <div className='home-row'>
         {productLs[1].map((element)=>{
-          return <Product {...element}/>
+          return <Product {...element} key={element.id}/>
         })}
       </div>
 
       <div className='home-row'>
         {productLs[2].map((element)=>{
-          return <Product {...element}/>
+          return <Product {...element} key={element.id}/>
         })}
       </div>
     </div>

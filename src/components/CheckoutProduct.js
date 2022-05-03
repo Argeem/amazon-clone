@@ -1,5 +1,6 @@
 import React from 'react'
 import { useStateValue } from '../data/StateProvider'
+import { v4 as uuidv4 } from 'uuid';
 import './CheckoutProduct.css'
 
 function CheckoutProduct({id,image,title,price,rating}) {
@@ -27,7 +28,7 @@ function CheckoutProduct({id,image,title,price,rating}) {
             </p>
             <div className='checkProduct-rating'>
                 {Array(rating).fill().map((_,i)=>(
-                    <p>⭐</p>
+                    <p key={uuidv4()}>⭐</p>
                 ))}
             </div>
             <button onClick={removeFormBasket}>Reomove from Basket</button>
